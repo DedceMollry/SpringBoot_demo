@@ -14,6 +14,9 @@ import java.io.IOException;
  */
 @Component
 public class CorsFilter implements Filter {
+	
+	private static final Logger LOGGER = LoggerFactory.getClass(CorsFilter.class);
+	
     /**
      * JSON web token 在请求头上的名字
      */
